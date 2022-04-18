@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de Operadores Aritméticos - Básico</title>
+</head>
+<body>
+    <h1 style="
+            text-align: center; 
+            font-family: monospace;"
+    >Aula um de programação em Javascript</h1>
+
+    <script>
+
+    /* Chegou a hora de praticar.
+
+    Em alguns pontos deste treinamento vou pedir para você praticar o que vimos te dando algumas tarefas e desafios. Aproveite para se auto-avaliar. Nessa primeira tarefa, você poderá fazer o download do recurso dessa aula e criar o código que está comentado. Abaixo, segue a descrição. */
+
+    //pedir para o usuario digitar um numero
+    let numberOne = prompt("Digite um número qualquer: ");
+                               
+    //converter em numero inteiro
+    numberOne = parseInt(numberOne);
+
+    //pedir para o usuario digitar outro numero   
+    let numberTwo = prompt("Digite um segundo número qualquer: ");
+
+    //converter em numero inteiro
+    numberTwo = parseInt(numberTwo);
+
+    /* Mostrar em um alert o seguinte texto " O resto da divisão de n1 por n2 é: " (resultado) */
+    var result = numberOne % numberTwo; 
+    alert("O resto da divisão de " + numberOne + " por " + numberTwo + " é: " + result);
+
+    /* Mostrar em um alert o seguinte texto " O número n1 elevado a n2 é: " (resultado) */
+    var result = numberOne ** numberTwo; 
+    alert("O número " + numberOne + " elevado a " + numberTwo + " é: " + result);
+      
+    </script>
+</body>
+</html>
