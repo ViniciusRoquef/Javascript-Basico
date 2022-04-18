@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de Variáveis - Básico</title>
+</head>
+<body>
+    <h1 style="
+            text-align: center; 
+            font-family: monospace;"
+    >Aula um de programação em Javascript</h1>
+
+    <script>
+    /* Chegou a hora de praticar.
+
+    Em alguns pontos deste treinamento vou pedir para você praticar o que vimos te dando algumas tarefas e desafios. Aproveite para se auto-avaliar. Nessa primeira tarefa, você poderá fazer o download do recurso dessa aula e criar o código que está comentado. Abaixo, segue a descrição. */
+
+    //pedir para o usuario digitar um numero
+    let numberOne = prompt("Digite um número qualquer: ");
+                               
+    //converter em numero inteiro
+    numberOne = parseInt(numberOne);
+
+    //pedir para o usuario digitar outro numero   
+    let numberTwo = prompt("Digite um segundo número qualquer: ");
+
+    //converter em numero inteiro
+    numberTwo = parseInt(numberTwo);
+
+    //mostrar a subtração concatenando com o texto "a subtração é: ..." 
+    var subtracao = numberOne - numberTwo; 
+    alert("A subtração dos dois valores é: " + subtracao);
+
+    //mostrar a multiplicação concatenando com o texto "a multiplicação é: ..."
+    var multiplicação= numberOne * numberTwo;
+    alert("A multiplicação dos dois valores é: " + multiplicação);
+
+    //mostrar a divisão concatenando com o texto "a divisão é: ..."
+    var divisao = numberOne / numberTwo;
+    alert("A divisão dos dois valores é: " + divisao);
+
+    //mostrar a soma concatenando com o texto "a soma é: ..."
+    var soma = numberOne + numberTwo;
+    alert("A soma dos dois valores é: " + soma);
+        
+        
+    </script>
+</body>
+</html>
