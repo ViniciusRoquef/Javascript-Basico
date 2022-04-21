@@ -27,14 +27,18 @@
     </table>
 </body>
 <script>
-    var n1 = prompt('digite um número'); 
-    n1 = parseFloat(n1)
-
-    var n2 = parseFloat(prompt('digite outro número'));
+    var n1 = parseFloat(prompt('Digite um número')); 
+    var n2 = parseFloat(prompt('Digite outro número'));
 
     var media = (n1 + n2)/2; 
 
-    alert(media > 5);
+    var media = new function(){
+        if(media < 6){
+            console.log("Vocễ está de recuperação")
+        }else{
+            console.log('Vôce está aprovado')
+        }
+    };
     
 </script>
 </html>
