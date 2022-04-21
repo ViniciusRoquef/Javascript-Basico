@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript aula 5 - Básico</title>
+</head>
+<body>
+    <h1 style="
+            text-align: center; 
+            font-family: monospace;"
+    >Exercício II</h1>
+
+</body>
+<script>
+    // fazer o jogador digitar um número 
+    let n1 = parseInt(prompt('Digite um número: '));
+    // fazer o jogador digitar outro número 
+    let n2 = parseInt(prompt('Digite outro um número: '));
+    // se os números forem iguais, mostrar a mensagem 'empate'
+    var empate = new function(){
+        if( n1 === n2){
+            alert('Empate')
+        } else {
+            alert('Os números não são iguais')
+        }
+    };
+    // sortear o númeor entre 0 e 1 
+    var sorteio = parseInt(Math.random() *2 );
+    alert('O número do sorteio é: ' + sorteio);
+    // se o número sorteado for 0, ganha quem escolher o número MENOR
+    var sorteio0 = new function(){
+        if(sorteio === 0 ){
+            let ganhador = n1 < n2; 
+            alert('O vencedor é o número 1 que escolheu o número MENOR') 
+        } else {
+            alert('O vencedor é o número 2 que escolheu o número MENOR')
+        } return
+    };
+    // se o número sorteado for 1, ganha quem escolher o numero MAIOR
+    var sorteio1 = new function(){
+        if(sorteio === 1 ){
+            let ganhador = n1 > n2; 
+            alert('O vencedor é o número 1 que escolheu o número MAIOR') 
+        } else {
+            alert('O vencedor é o número 2 que escolheu o número MAIOR')
+        }
+    };
+
+</script>
+</html>
