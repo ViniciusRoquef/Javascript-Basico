@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript aula 10 - Básico</title>
+</head>
+<body>
+    <h1 style="
+            text-align: center; 
+            font-family: monospace;"
+    >Estruturas de Repetição</h1>
+    <table>
+        <h3>Repetições (loops)</h3>
+        <ul>
+            <li>for</li>
+            <li>while</li>
+            <li>do...while</li>
+        </ul>
+    </table>
+
+    <script>
+        /*Pedir para o usuário digitar na tela um número de 1 a 100.
+        Mostrar a taboada dele.*/
+
+        var number = parseInt(prompt('Digite um número: ')); 
+        console.log(number);
+
+        var i = 1; 
+
+        while(i <= 100){
+            console.log(number + ' x ' + i + ' = ' + (number * i)); 
+            i++;
+        };   
+        
+    </script>
+</body>
+</html>
