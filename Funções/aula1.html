@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções JS</title>
+</head>
+<body>
+    <h1 style="
+            text-align: center; 
+            font-family: monospace;"
+    > Funções em Javascript - Cap. - 4.
+    </h1>
+    <p><b>Exercício:</b> Pedir para o usuário digitar um número e mostrar a tabuada desse número de 1 a 100. Deve ter a possibilidade do usuário digitar outro número e também limpar a tabuada gerada previamente.</p>
+
+    <div id="output">
+
+    </div>
+
+    <script>
+
+        var output = document.querySelector('#output');
+
+        var mensagem = '';
+        for(var i = 1; i <= 101; i++){
+            mensagem = mensagem + 'i: ' + i + '<br>'; 
+        }
+
+        output.innerHTML = mensagem;
+        
+    </script>
+    
+</body>
+</html>
