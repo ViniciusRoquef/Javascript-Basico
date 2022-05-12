@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Funções</title>
+</head>
+<body>
+    <h1 style="
+            text-align: center; 
+            font-family: monospace;"
+    > Introdução a Funções em Javascript - Seção 20.
+    </h1>
+    <p><b>Exercício:</b> Peça para o usuário digitar um número. Coloque quatro botões representando as quatro operações básicas. Eles serão responsáveis por modificar o número inicial.</p>
+
+    <div style="padding-bottom: 10px;">
+        <button id="multiplicacao" onclick="multiplicacao()"> * </button>
+        <button id="divisao" onclick="divisao()"> / </button>
+        <button id="soma" onclick="adicao()"> + </button>
+        <button id="subtracao" onclick="subtracao()"> - </button>
+    </div>
+    <div id="output">
+    </div>
+    <script>
+        
+        var numeroInicial = prompt("Digite um número: "); 
+        numeroInicial = parseInt(numeroInicial); 
+
+        function exibir(){
+            var output = document.querySelector('#output');
+            output.innerHTML = numeroInicial;
+        } 
+        exibir();
+
+        function multiplicacao(){
+            var numeroFinal = prompt('Digite um número para ser multiplicado: '); 
+            numeroFinal = parseInt(numeroFinal); 
+            //numeroInicial = numeroInicial * numeroFinal;
+            numeroInicial *= numeroFinal;
+            exibir();
+        }; 
+
+        function divisao(){
+            var numeroFinal = prompt('Digite um número para ser dividido: '); 
+            numeroFinal = parseInt(numeroFinal); 
+            //numeroInicial = numeroInicial / numeroFinal;
+            numeroInicial /= numeroFinal;
+            exibir();
+        };
+
+        function adicao(){
+            var numeroFinal = prompt('Digite um número para ser adicionado: '); 
+            numeroFinal = parseInt(numeroFinal); 
+            //numeroInicial = numeroInicial + numeroFinal;
+            numeroInicial += numeroFinal;
+            exibir();
+        }; 
+
+        function subtracao(){
+            var numeroFinal = prompt('Digite um número para ser subtraído: '); 
+            numeroFinal = parseInt(numeroFinal); 
+            //numeroInicial = numeroInicial - numeroFinal;
+            numeroInicial -= numeroFinal;
+            exibir();
+        }
+        
+        
+    </script>
+</body>
+</html>

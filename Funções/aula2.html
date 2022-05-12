@@ -10,7 +10,7 @@
     <h1 style="
             text-align: center; 
             font-family: monospace;"
-    > Funções em Javascript - Seção 20.
+    > Introdução a Funções em Javascript - Seção 20.
     </h1>
     <p><b>Exercício:</b> Pedir para o usuário digitar um número e mostrar a tabuada desse número de 1 a 100. Deve ter a possibilidade do usuário digitar outro número e também limpar a tabuada gerada previamente.</p>
 
@@ -26,17 +26,28 @@
 
         var output = document.querySelector('#output');
 
+
         function mostrarTabuada(){
-            alert('mostrarTabuada foi chamada')
+            var n = prompt('Digite um número'); 
+            limparTabuada();
+            n = parseFloat(n); 
+            var i = 1; 
+            while(i <= 10){
+                
+                mensagem += n + ' x ' + i + ' = ' + '<b>'+ (n * i)+ '</b>' + '<br>'; 
+                i++; 
+            }
+            output.innerHTML = mensagem;
         }
-        
+        var mensagem = '';
+
+        //Limpar tabuada
 
         function limparTabuada(){
-            alert('limparTabuada foi chamada')
+            mensagem = ''; 
+            output.innerHTML = mensagem;
         }
-        mostrarTabuada();
-        limparTabuada();
-
+        
     </script>
     
 </body>
