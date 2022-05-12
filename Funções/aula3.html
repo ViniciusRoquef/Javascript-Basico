@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções - Aula 3</title>
+</head>
+<body>
+    <h1 style="
+    text-align: center; 
+    font-family: monospace;">
+    Declarando parâmetros nas funções: 
+    </h1>
+    <p><b>Exercício:</b> Pedir para o usuário digitar dois números que representam os lados de um retângulo assim que a página é carregada. Mostrar na tela a área total quando clicar em um botão.</p>
+    <button onclick="areaRetangulo()"> Exibir</button>
+    <div id="output">
+
+    </div>
+    <script>
+
+        function exibir(){
+            var output = document.querySelector('#output'); 
+            output.innerHTML = "A área do retângulo é: " + area; 
+        }
+
+        function areaRetangulo( n1, n2){
+            var n1 = prompt('Digite a altura do retângulo: '); 
+            n1 = parseFloat(n1); 
+
+            var n2 = prompt('Digite a largura do retângulo: '); 
+            n2 = parseFloat(n2); 
+
+            area = n1 * n2 + "cm²"; 
+            exibir();
+        }
+
+    </script>
+
+</body>
+</html>

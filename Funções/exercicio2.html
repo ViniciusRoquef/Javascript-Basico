@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Funções</title>
+</head>
+<body>
+    <h1 style="
+            text-align: center; 
+            font-family: monospace;"
+    > Introdução a Funções em Javascript - Seção 20.
+    </h1>
+    <p><b>Exercício:</b> Melhorando a calculadora.</p>
+
+    <div style="padding-bottom: 10px;">
+        <button id="multiplicacao" onclick="calcular('*')"> * </button>
+        <button id="divisao" onclick="calcular('/')"> / </button>
+        <button id="soma" onclick="calcular('+')"> + </button>
+        <button id="subtracao" onclick="calcular('-')"> - </button>
+    </div>
+    <div id="output">
+    </div>
+    <script>
+        
+        var numeroInicial = prompt("Digite um número: "); 
+        numeroInicial = parseInt(numeroInicial); 
+
+        function exibir(){
+            var output = document.querySelector('#output');
+            output.innerHTML = numeroInicial;
+        } 
+        exibir();
+
+        function calcular(simbolo){
+            var numeroFinal = prompt('Digite um segundo número para calcular: '); 
+            numeroFinal = parseInt(numeroFinal); 
+            
+            switch (simbolo) {
+                case '*':
+                    numeroInicial *= numeroFinal
+                    break;
+                case '/':
+                    numeroInicial /= numeroFinal
+                    break;
+                case '+':
+                    numeroInicial += numeroFinal
+                    break;
+                case '-':
+                    numeroInicial -= numeroFinal
+                    break;
+            }
+            exibir();
+        }
+        
+    </script>
+</body>
+</html>
